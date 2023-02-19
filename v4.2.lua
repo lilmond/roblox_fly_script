@@ -180,7 +180,7 @@ local function load_textgui()
 	text.Font = Enum.Font.SciFi
 	text.TextTransparency = 1
 
-	gui.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+	gui.Parent = game:GetService("CoreGui")
 	text.Parent = gui
 	
 	return text
