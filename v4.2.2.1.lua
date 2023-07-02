@@ -108,7 +108,7 @@ local function invisible()
 	campart.Transparency = 0.5
 	campart.BrickColor = BrickColor.new("Really red")
 	campart.Material = Enum.Material.Neon
-	campart.Size = Vector3.new(0, 0, 0)--hrp.Size
+	campart.Size = hrp.Size
 	campart.CanCollide = false
 	campart.Parent = game:GetService("Workspace")
 	camera.CameraSubject = campart
