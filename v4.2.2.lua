@@ -202,20 +202,28 @@ uis.InputBegan:Connect(function(keyinput, paused)
 		textgui.Text = flyspeed
 		wait(0.1)
 		textgui.TextTransparency = 1
-	elseif key == invisiblebutton then
-		if (invisible_subkey ~= "") then
-			for i, it in pairs(Enum.KeyCode:GetEnumItems()) do
-				local itt = it.Name:lower()
-				if (itt == invisible_subkey) then
-					if not uis:IsKeyDown(it) then return end
-				end
+	end
+end)
+
+uis.InputBegan:Connect(function(keyinput)
+	local key = keyinput.KeyCode.Name:lower()
+	
+	if (key ~= invisiblebutton) then return end
+	if not uis:IsKeyDown(Enum.KeyCode.LeftShift) then return end
+	
+	if (invisible_subkey ~= "") then
+		for i, kc in pairs(Enum.KeyCode:GetEnumItems()) do
+			local kcs = kc.Name:lower()
+			if (kcs == invisible_subkey) then
+				if not uis:IsKeyDown(kc) then return end
 			end
 		end
-		if invisible_enabled then
-			invisible_enabled = false
-		else
-			invisible()
-		end
+	end
+	
+	if invisible_enabled then
+		invisible_enabled = false
+	else
+		invisible()
 	end
 end)
 
