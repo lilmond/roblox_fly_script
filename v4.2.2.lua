@@ -209,7 +209,6 @@ uis.InputBegan:Connect(function(keyinput)
 	local key = keyinput.KeyCode.Name:lower()
 	
 	if (key ~= invisiblebutton) then return end
-	if not uis:IsKeyDown(Enum.KeyCode.LeftShift) then return end
 	
 	if (invisible_subkey ~= "") then
 		for i, kc in pairs(Enum.KeyCode:GetEnumItems()) do
