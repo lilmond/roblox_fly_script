@@ -4,7 +4,7 @@ local flyparent = "HumanoidRootPart"
 local flyspeed = 100
 
 local invisible_subkey = "leftshift"
-local invisiblebutton = "t"
+local invisiblebutton = "r"
 local invisible_max_distance = 9e10
 
 local controls = {
@@ -108,7 +108,7 @@ local function invisible()
 	campart.Transparency = 0.5
 	campart.BrickColor = BrickColor.new("Really red")
 	campart.Material = Enum.Material.Neon
-	campart.Size = hrp.Size
+	campart.Size = Vector3.new(0, 0, 0)--hrp.Size
 	campart.CanCollide = false
 	campart.Parent = game:GetService("Workspace")
 	camera.CameraSubject = campart
@@ -213,6 +213,8 @@ uis.InputBegan:Connect(function(keyinput, paused)
 					subkey_held = true
 				end
 			end
+		else
+			subkey_held = true
 		end
 		
 		if not subkey_held then return end
