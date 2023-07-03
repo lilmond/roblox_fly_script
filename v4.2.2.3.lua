@@ -75,8 +75,6 @@ local function fly()
 			bg:Destroy()
 		end
 		
-		print(bv.Parent)
-		
 		humanoid.PlatformStand = true
 		bv.Velocity = (workspace.Camera.CoordinateFrame.LookVector * ((flycontrol.F - flycontrol.B) * flyspeed)) + (workspace.CurrentCamera.CoordinateFrame.RightVector * ((flycontrol.R - flycontrol.L) * flyspeed)) + (workspace.CurrentCamera.CoordinateFrame.UpVector * ((flycontrol.U - flycontrol.D) * flyspeed))
 		bg.CFrame = workspace.Camera.CoordinateFrame
