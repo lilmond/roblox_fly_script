@@ -1,4 +1,4 @@
--- VERSION: 4.2.2.5
+-- VERSION: 4.2.2.6
 
 --- Configs
 local flybutton = "t"
@@ -109,15 +109,20 @@ local function invisible()
 	humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
 	humanoid.Sit = false
 	
+    local cammodel = Instance.new("Model")
 	local campart = Instance.new("Part")
+    local camhumanoid = Instance.new("Humanoid")
 	campart.CFrame = hrp.CFrame
 	campart.Transparency = 0.5
 	campart.BrickColor = BrickColor.new("Really red")
-	campart.Material = Enum.Material.Neon
+	campart.Material = Enum.Material.ForceField
 	campart.Size = hrp.Size
 	campart.CanCollide = false
-	campart.Parent = game:GetService("Workspace")
-	camera.CameraSubject = campart
+    campart.Name = "HumanoidRootPart"
+	campart.Parent = cammodel
+    camhumanoid.Parent = cammodel
+    cammodel.Parent = game:GetService("Workspace")
+	camera.CameraSubject = camhumanoid
 	
 	local bv = Instance.new("BodyVelocity")
 	local bg = Instance.new("BodyGyro")
@@ -134,7 +139,7 @@ local function invisible()
 			if campart then
 				hrp.CFrame = campart.CFrame
 				hrp.Velocity = campart.Velocity
-				campart:Destroy()
+				cammodel:Destroy()
 			end
 			if not flying then
 				humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
