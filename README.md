@@ -9,3 +9,12 @@ Latest Version
 ```lua
 pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/latest.lua'))() end)
 ```
+
+# Default Keybinds
+- `t` - Toggle fly
+- `y` - Toggle invisible
+- `[` - Reducde fly speed
+- `]` - Increase fly speed
+- `-` - Reset fly speed
+
+Default "fly" parent (`BodyVelocity`, `BodyGyro`): `HumanoidRootPart`, set this to `Head` if the game you're exploiting in has a good anti-exploit.
