@@ -1,4 +1,5 @@
 -- VERSION: 4.2.2.6
+-- More versions: https://github.com/lilmond/roblox_fly_script
 
 --- Configs
 local flybutton = "t"
