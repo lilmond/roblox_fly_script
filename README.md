@@ -12,6 +12,13 @@ Latest Version
 pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/latest.lua'))() end)
 ```
 
+Vehicle Version
+```lua
+pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/v4.2.2.6_vehicle.lua'))() end)
+```
+- `n` - Toggle fly
+- `m` - Toggle invisible
+
 # Default Keybinds
 - `t` - Toggle fly
 - `y` - Toggle invisible
