@@ -21,6 +21,13 @@ pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilm
 - `n` - Toggle fly
 - `m` - Toggle invisible
 
+## Unkillable Bee
+```lua
+pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/unkillable_bee.lua'))() end)
+```
+- `n` - Toggle fly
+- `m` - Toggle invisible (bee mode)
+
 ## Fling
 ```lua
 pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/fling_v1.5.lua'))() end)
