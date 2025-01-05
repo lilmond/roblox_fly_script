@@ -2,7 +2,7 @@
 -- More versions: https://github.com/lilmond/roblox_fly_script
 
 --- Configs
-local flybutton = ""
+local flybutton = "v"
 local flyparent = "HumanoidRootPart"
 local flyspeed = 100
 
