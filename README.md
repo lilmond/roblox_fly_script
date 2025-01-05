@@ -7,17 +7,25 @@ https://discord.com/invite/Bnf3e8pkyj
 follow me for more free roblox cheats :3
 
 # Loadstring Methods
-Latest Version
+## Latest Version
 ```lua
 pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/latest.lua'))() end)
 ```
+- `t` - Toggle fly
+- `y` - Toggle invisible
 
-Vehicle Version
+## Vehicle Version
 ```lua
 pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/v4.2.2.6_vehicle.lua'))() end)
 ```
 - `n` - Toggle fly
 - `m` - Toggle invisible
+
+## Fling
+```lua
+pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/fling_v1.5.lua'))() end)
+```
+- `g` - Toggle Fling
 
 # Default Keybinds
 - `t` - Toggle fly
