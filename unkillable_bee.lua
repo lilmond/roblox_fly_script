@@ -2,12 +2,12 @@
 -- More versions: https://github.com/lilmond/roblox_fly_script
 
 --- Configs
-local flybutton = "n"
+local flybutton = ""
 local flyparent = "HumanoidRootPart"
 local flyspeed = 100
 
 local invisible_subkey = ""
-local invisiblebutton = "m"
+local invisiblebutton = "b"
 local invisible_max_distance = 20
 
 local controls = {
