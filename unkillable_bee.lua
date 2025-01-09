@@ -149,7 +149,7 @@ local function invisible()
 			con:Disconnect()
 			return
 		end
-		hrp.CFrame = campart.CFrame * CFrame.new(random:NextNumber(-invisible_max_distance, invisible_max_distance), random:NextNumber(0, invisible_max_distance), random:NextNumber(-invisible_max_distance, invisible_max_distance))
+		hrp.CFrame = campart.CFrame * CFrame.new(random:NextNumber(-invisible_max_distance, invisible_max_distance), random:NextNumber(-invisible_max_distance, invisible_max_distance), random:NextNumber(-invisible_max_distance, invisible_max_distance))
 		hrp.AssemblyLinearVelocity = Vector3.new(0,0,0)
 		bv.Velocity = (workspace.Camera.CoordinateFrame.LookVector * ((flycontrol.F - flycontrol.B) * flyspeed)) + (workspace.CurrentCamera.CoordinateFrame.RightVector * ((flycontrol.R - flycontrol.L) * flyspeed)) + (workspace.CurrentCamera.CoordinateFrame.UpVector * ((flycontrol.U - flycontrol.D) * flyspeed))
 		bg.CFrame = workspace.Camera.CoordinateFrame
