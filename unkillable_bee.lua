@@ -8,7 +8,7 @@ local flyspeed = 100
 
 local invisible_subkey = ""
 local invisiblebutton = "b"
-local invisible_max_distance = 50
+local invisible_max_distance = 20
 
 local controls = {
 	front = "w",
