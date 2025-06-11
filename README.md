@@ -11,8 +11,32 @@ follow me for more free roblox cheats :3
 ```lua
 pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/latest.lua'))() end)
 ```
+
 - `t` - Toggle fly
 - `y` - Toggle invisible
+
+Manual Edit (Different executor tab), you can't force stop with this method.
+```lua
+getgenv().flybutton = "t"
+getgenv().flyparent = "HumanoidRootPart"
+getgenv().flyspeed = 100
+
+getgenv().invisible_subkey = ""
+getgenv().invisiblebutton = "y"
+getgenv().invisible_max_distance = 9e10
+
+getgenv().controls = {
+	front = "w",
+	back = "s",
+	right = "d",
+	left = "a",
+	up = "space",
+	down = "leftcontrol",
+	add_speed = "rightbracket",
+	sub_speed = "leftbracket",
+	reset_speed = "minus"
+}
+```
 
 ## Vehicle Version
 ```lua
