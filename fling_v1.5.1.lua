@@ -33,7 +33,7 @@ if getgenv().FLING_ENABLED then
                 humanoid.AutoRotate = true
                 for _, child in pairs(character:GetDescendants()) do if child:IsA("BasePart") then child.Massless = false end end
                 wait()
-                rootPart.Rotation = Vector3.new(0, 0, 0)
+                rootPart.CFrame = CFrame.new(rootPart.CFrame.Position, Vector3.new(0, 0, 0))
                 return
             end
     
